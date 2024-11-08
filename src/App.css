@@ -1,0 +1,157 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Style du Header */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+}
+
+.header a {
+  color: #f4a261;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+/* Style des produits */
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.product-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-card h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.product-card .price {
+  font-size: 1.2rem;
+  color: #f4a261;
+}
+
+.product-card .add-to-cart {
+  background-color: #f4a261;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.product-card .add-to-cart:hover {
+  background-color: #e76f51;
+}
+
+/* Style du Panier */
+.cart {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.cart h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item p {
+  font-size: 1.2rem;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart h3:last-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Style du filtre de catégories */
+.category-filter {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.category-filter select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  background-color: #fff;
+}
+
+.category-filter select:focus {
+  border-color: #f4a261;
+  outline: none;
+}
+
+/* Ajout d'un petit espace entre le filtre et la liste des produits */
+.product-list {
+  margin-top: 30px;
+}
